@@ -22,19 +22,8 @@ public class Usuario {
         return livrosImprestados;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setLivrosImprestados(ArrayList<Livro> livrosImprestados) {
-        this.livrosImprestados = livrosImprestados;
-    };
-
-public String exibirDetalis() {
+    public String exibirDetalhes() {
         String exibir = "Nome: " + nome + "\n"
                 + "ID: " + id + "\n"
                 + "Livros Emprestados:\n";
@@ -46,13 +35,13 @@ public String exibirDetalis() {
             }
         }
         return exibir;
-}
+    }
 
-public void adicionarLivro(Livro livro) {
-    this.livrosImprestados.add(livro);
-}
+    public void adicionarLivro(Livro livro) {
+        this.livrosImprestados.add(livro);
+    }
 
-public void removeLivro(Livro livro) {
-    this.livrosImprestados.remove(livro);
-}
+    public void removeLivro(Livro livro) {
+        this.livrosImprestados.remove(livro);
+    }
 }

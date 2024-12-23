@@ -27,23 +27,11 @@ public class Livro {
         return disponibilidade;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public void setCodigoDoLivro(String codigoDoLivro) {
-        this.codigoDoLivro = codigoDoLivro;
-    }
-
     public void setDisponibilidade(boolean disponibilidade) {
         this.disponibilidade = disponibilidade;
     }
 
-    public String exibirDetales() {
+    public String exibirDetalhes() {
         String exibir = "Título: " + this.titulo + "\n"
                 + "Autor: " + this.autor + "\n"
                 + "Código do Livro: " + this.codigoDoLivro + "\n"
