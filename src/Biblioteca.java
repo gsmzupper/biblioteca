@@ -67,8 +67,7 @@ public class Biblioteca {
 
         // Verifica se o livro e o usuário foram encontrados
         if (livroDevolver != null && usuarioDevolucao != null) {
-            livroDevolver.setDisponibilidade(true); // Usa o método setDisponivel() da classe Livro
-            usuarioDevolucao.removeLivro(livroDevolver);
+            livroDevolver.setDisponibilidade(true);;
             System.out.println("Devolução realizada com sucesso!");
         } else {
             System.out.println("Livro ou usuário não encontrado.");
@@ -79,8 +78,7 @@ public class Biblioteca {
         System.out.println("Livros disponíveis:");
         for (Livro livro : livros) {
             if (livro.isDisponibilidade()) {
-                System.out.println(livro.exibirDetalhes()); // Usa o método toString() da classe Livro
-            }
+                System.out.println(livro.exibirDetalhes());
         }
     }
 }
